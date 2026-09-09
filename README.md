@@ -1,0 +1,23 @@
+# Terminal OS
+
+Small Textual TUI for common system settings on Linux (NetworkManager + power-profiles-daemon + BlueZ).
+
+## Run
+
+```bash
+uv sync
+uv run terminal-os
+```
+
+## Features
+
+- Battery status, CPU temperature, and power profiles (power-saver / balanced / performance)
+- Battery charging mode (maximize charge / preserve battery health via UPower)
+- Sleep, hibernate, lock, reboot, shut down
+- Wi-Fi scan / connect / disconnect / radio toggle
+- VPN / WireGuard connect / disconnect / import (`.ovpn`, `.conf`)
+- Bluetooth scan / pair / connect / disconnect / power toggle
+
+Requires: `nmcli`, `bluetoothctl`, `powerprofilesctl`, `upower`, `busctl`, `systemctl`.
+VPN import needs the matching NetworkManager plugin (`network-manager-openvpn`, WireGuard is built-in).
+Charge limit UI appears only when the hardware reports UPower charge thresholds.
