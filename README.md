@@ -1,4 +1,4 @@
-# Terminal OS
+# Terminal Settings
 
 Small Textual TUI for common system settings on Linux (NetworkManager + power-profiles-daemon + BlueZ).
 
@@ -6,7 +6,7 @@ Small Textual TUI for common system settings on Linux (NetworkManager + power-pr
 
 ```bash
 uv sync
-uv run terminal-os
+uv run terminal-settings
 ```
 
 ## Features

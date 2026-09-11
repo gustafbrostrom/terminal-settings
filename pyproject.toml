@@ -1,5 +1,5 @@
 [project]
-name = "terminal-os"
+name = "terminal-settings"
 version = "0.1.0"
 description = "Small TUI for common laptop settings (power, battery, Wi-Fi, Bluetooth)"
 readme = "README.md"
@@ -12,8 +12,13 @@ dependencies = [
 ]
 
 [project.scripts]
-terminal-os = "terminal_os:main"
+terminal-settings = "terminal_settings:main"
 
 [build-system]
 requires = ["uv_build>=0.11.26,<0.12.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.2",
+]

@@ -1,4 +1,4 @@
-"""Terminal OS — a small settings TUI."""
+"""Terminal Settings — a small settings TUI."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ from textual.widgets import (
 )
 from textual.widgets.option_list import Option
 
-from terminal_os.backends import battery, bluetooth, power, session, temperature, vpn, wifi
+from terminal_settings.backends import battery, bluetooth, power, session, temperature, vpn, wifi
 
 TAB_ORDER = ("overview", "power", "wifi", "vpn", "bluetooth")
 
@@ -459,10 +459,10 @@ class BluetoothPane(VerticalScroll):
             )
 
 
-class TerminalOS(App[None]):
+class TerminalSettings(App[None]):
     """Settings-style TUI for common laptop controls."""
 
-    TITLE = "Terminal OS"
+    TITLE = "Terminal Settings"
     SUB_TITLE = "tty settings"
     # Plain console look — Linux VTs handle custom hex / box-drawing poorly.
     CSS = """
@@ -1012,4 +1012,4 @@ class TerminalOS(App[None]):
 
 
 def run() -> None:
-    TerminalOS().run()
+    TerminalSettings().run()

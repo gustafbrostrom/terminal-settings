@@ -1,4 +1,4 @@
-"""System backends for terminal-os."""
+"""System backends for terminal-settings."""
 
 from . import battery, bluetooth, power, session, temperature, vpn, wifi
 
