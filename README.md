@@ -4,7 +4,16 @@ Small Textual TUI for common system settings on Linux (NetworkManager + power-pr
 
 ![Terminal Settings overview](assets/screenshot.png)
 
-## Run
+## Install
+
+Download the latest Linux x86_64 binary from [Releases](https://github.com/gustafbrostrom/terminal-settings/releases):
+
+```bash
+chmod +x terminal-settings-*-linux-x86_64
+./terminal-settings-*-linux-x86_64
+```
+
+Or run from source:
 
 ```bash
 uv sync
