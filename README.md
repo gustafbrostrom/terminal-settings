@@ -2,6 +2,8 @@
 
 Small Textual TUI for common system settings on Linux (NetworkManager + power-profiles-daemon + BlueZ).
 
+![Terminal Settings overview](assets/screenshot.png)
+
 ## Run
 
 ```bash
