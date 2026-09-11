@@ -6,6 +6,12 @@ Small Textual TUI for common system settings on Linux (NetworkManager + power-pr
 
 ## Install
 
+Host tools (Debian/Ubuntu):
+
+```bash
+sudo apt install network-manager bluez power-profiles-daemon upower network-manager-openvpn
+```
+
 Download the latest Linux x86_64 binary from [Releases](https://github.com/gustafbrostrom/terminal-settings/releases):
 
 ```bash
@@ -29,6 +35,4 @@ uv run terminal-settings
 - VPN / WireGuard connect / disconnect / import (`.ovpn`, `.conf`)
 - Bluetooth scan / pair / connect / disconnect / power toggle
 
-Requires: `nmcli`, `bluetoothctl`, `powerprofilesctl`, `upower`, `busctl`, `systemctl`.
-VPN import needs the matching NetworkManager plugin (`network-manager-openvpn`, WireGuard is built-in).
-Charge limit UI appears only when the hardware reports UPower charge thresholds.
+WireGuard VPN is built into NetworkManager. Charge limit UI appears only when the hardware reports UPower charge thresholds.
